@@ -9,4 +9,4 @@ def populate_object(obj, data_dictionary):
             setattr(obj, field, data_dictionary[field])
         
         except AttributeError:
-            return jsonify({"message" : "attribute not in obj"})
+            return jsonify({"message" : "attribute {field} not in obj"})
