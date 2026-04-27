@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 from db import db
 from models.auth_tokens import AuthTokens, auth_token_schema
-from models.app_users import AppUsers
+from models.users import Users
 from lib.authenticate import authenticate_return_auth
 
 def auth_token_add():
@@ -18,7 +18,7 @@ def auth_token_add():
     now_datetime = datetime.now()
     expiration_datetime = now_datetime + timedelta(hours=12)
 
-    user_query = db.session.query(AppUsers).filter(AppUsers.email == email).first()
+    user_query = db.session.query(Users).filter(Users.email == email).first()
 
     if user_query:
         user_id = user_query.user_id

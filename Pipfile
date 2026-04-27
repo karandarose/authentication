@@ -5,12 +5,13 @@ name = "pypi"
 
 [packages]
 flask = "*"
+psycopg2 = "*"
 flask-sqlalchemy = "*"
-flask-bcrypt = "*"
 sqlalchemy = "*"
 marshmallow = "*"
+marshmallow-sqlalchemy = "*"
 flask-marshmallow = "*"
-psycopg2 = "*"
+flask-bcrypt = "*"
 
 [dev-packages]
 

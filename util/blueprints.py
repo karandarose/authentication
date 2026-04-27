@@ -1,10 +1,14 @@
 import routes
 
+
 def register_blueprint(app):
-    app.register_blueprint(routes.users)
     app.register_blueprint(routes.auth)
-    app.register_blueprint(routes.company)
-    app.register_blueprint(routes.search)
-    app.register_blueprint(routes.product)
-    app.register_blueprint(routes.category)
-    app.register_blueprint(routes.warranty)
+    app.register_blueprint(routes.users)
+    app.register_blueprint(routes.temple)
+    app.register_blueprint(routes.species)
+    app.register_blueprint(routes.master)
+    app.register_blueprint(routes.padawan)
+    app.register_blueprint(routes.lightsaber)
+    app.register_blueprint(routes.crystal)
+    app.register_blueprint(routes.course)
+    app.register_blueprint(routes.enrollment)
